@@ -1,0 +1,33 @@
+{
+  "api_key": {
+    "description": "小云鲨API Key",
+    "type": "string",
+    "hint": "加群获取有效Key（突破IP限制），留空则默认IP限制（5分钟/次）",
+    "obvious_hint": true,
+    "default": ""
+  },
+  "daily_pick_limit": {
+    "description": "每日捡瓶次数上限",
+    "type": "int",
+    "hint": "单个用户每日最多捡瓶次数（建议10-20）",
+    "default": 10,
+    "min": 1,
+    "max": 999
+  },
+  "daily_throw_limit": {
+    "description": "每日投瓶次数上限",
+    "type": "int",
+    "hint": "单个用户每日最多投瓶次数（建议3-10）",
+    "default": 5,
+    "min": 1,
+    "max": 999
+  },
+  "api_timeout": {
+    "description": "API请求超时时间（秒）",
+    "type": "int",
+    "hint": "防止API无响应阻塞插件（建议5-10）",
+    "default": 8,
+    "min": 3,
+    "max": 30
+  }
+}

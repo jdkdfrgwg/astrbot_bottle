@@ -1,0 +1,24 @@
+name: "小云鲨漂流瓶"
+author: "开发者名称"
+description: "基于小云鲨API的漂流瓶插件，支持捡/投瓶、次数限制、管理员管控，适配QQ个人号"
+version: "1.3.0"
+repository: "https://github.com/你的仓库地址/astrbot_plugin_drift_bottle"
+license: "MIT"
+
+# 兼容性声明（参考摘要4、5的平台适配示例）
+compatibility:
+  astrbot_version: ">=v3.4.36"  # 需会话控制+配置功能支持
+  supported_platforms:
+    - "aiocqhttp"  # QQ个人号（支持所有消息类型，参考摘要5的平台过滤）
+    - "qqofficial" # QQ官方接口（仅文本+图片，无At支持）
+
+# 依赖配置（对应requirements.txt，参考摘要3的依赖管理）
+dependencies:
+  - "aiohttp>=3.9.0"  # 异步网络请求库（官方禁止requests，参考摘要1原则）
+
+# 插件标签（分类用，便于插件市场检索）
+tags:
+  - "娱乐"
+  - "社交"
+  - "API对接"
+  - "QQ机器人"
